@@ -1,0 +1,31 @@
+@mixin wrapper
+  padding-inline: 20px
+  margin-inline: auto
+  width: 100%
+  max-width: 1280px
+
+@mixin wrapper--small
+  @include wrapper
+  max-width: 920px
+
+@mixin toggle-button
+  width: 60px
+  height: 60px
+  display: grid
+  grid-auto-columns: 1fr
+  gap: 4px
+  border: none
+
+@mixin toggle-button--round
+  @include toggle-button
+  border-radius: 50%
+
+$breakpoints: ("small": 480px,"medium": 768px,"large": 1280px,"xlarge": 1650px)
+
+@mixin breakpoint($breakpoint)
+  @if map-has-key($breakpoints, $breakpoint)
+    $width: map-get($breakpoints, $breakpoint)
+    @media (min-width: #{$width})
+      @content
+  @else
+    @error "Breakpoint `#{$breakpoint}` is undefined."

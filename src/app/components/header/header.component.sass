@@ -1,0 +1,19 @@
+@use '../../styles/mixins' as mixins
+
+.header
+    padding-block: 20px
+
+    &__wrapper
+        @include mixins.wrapper()
+
+        display: grid
+        grid-template-columns: 1fr 60px
+
+    &__logo-title
+        font-family: var(--ll-decor-font-family)
+        font-size: 38px
+        color: var(--ll-logo-color)
+        user-select: none
+
+    &__theme-btn
+        @include mixins.toggle-button()
