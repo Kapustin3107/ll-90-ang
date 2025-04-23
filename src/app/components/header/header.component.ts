@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
     // imports: [RouterOutlet],
     templateUrl: './header.component.html',
     styleUrl: './header.component.sass'
-  })
+})
 
-  export class Header {}
+export class Header {}

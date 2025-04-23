@@ -1,0 +1,21 @@
+@use '../../styles/mixins' as mixins
+
+.page
+    min-width: 360px
+    display: grid
+    grid-template-columns: 1fr
+    align-content: start
+    gap: var(--ll-indent)
+    min-height: 100vh
+    font-family: var(--ll-font-family)
+    background: var(--ll-site-bg-dark)
+    color: var(--ll-text-light)
+
+.page__wrapper
+    display: grid
+    grid-template-columns: 1fr
+
+    @include mixins.breakpoint(medium)
+        padding-inline: 0
+        grid-template-columns: 400px 1fr
+
