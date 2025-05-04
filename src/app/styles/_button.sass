@@ -1,0 +1,22 @@
+.button
+    padding: 12px 30px
+    display: inline-grid
+    grid-template-columns: 1fr 20px
+    gap: 4px
+    font-size: 21px
+    font-weight: 900
+    background: var(--ll-primary)
+    border: 1px solid var(--ll-btn-border)
+    border-radius: 8px
+    cursor: pointer
+    
+
+    &:hover
+        background: var(--ll-primary-hover)
+
+    &--dark
+        background-color: var(--ll-btn-dark-bg)
+        color: var(--ll-btn-color-dark)
+
+    &--round
+        border-radius: 50%

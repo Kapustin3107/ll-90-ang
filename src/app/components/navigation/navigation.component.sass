@@ -1,0 +1,30 @@
+.navigation
+    padding: 20px
+    position: fixed
+    inset: 0
+    z-index: 1
+    backdrop-filter: blur(4px)
+    background-color: rgba(0, 0, 0, 0.2)
+    display: none
+
+    &__list
+        margin-inline: auto
+        width: 100%
+        max-width: 126px
+        padding: 28px
+        border: 1px solid var(--ll-accent)
+        border-radius: 15px
+        background-color: var(--ll-dark)
+        display: grid
+        gap: 28px
+
+    &__link
+        display: grid
+        min-height: 60px
+        background-color: var(--ll-btn-color)
+        border-radius: 6px
+        font-size: 12px
+        text-align: center
+
+        &.active
+            background-color: var(--ll-accent-secondary)

@@ -5,12 +5,13 @@
     --ll-dark: #000000
 
     // typography:
-    --ll-font-family: "Poppins" "Arial" sans-serif
+    --ll-font-family: "Poppins", "Arial", sans-serif
     --ll-font-size: 18px
     --ll-decor-font-family: 'Sigmar One'
 
     //theme colors
     --ll-primary: #C2B293
+    --ll-primary-hover: #e6b85d
     --ll-secondary: #3B3729
     --ll-accent: #4B3D10
     --ll-error: tomato
@@ -27,7 +28,6 @@
     // bg colors
     --ll-site-bg-light: #FEF6DD
     --ll-site-bg-dark: #131312
-    --ll-btn-bg: #C2B293
     --ll-section-color: #60594B
     --ll-section-border: #625839
     --ll-btn-dark-bg: #272522
@@ -36,8 +36,9 @@
     --ll-btn-border: #4B3D10
 
     // indents
-
     --ll-indent: 20px
 
+    // others
+    --ll-transition-time: 0.3s
     @include mixins.breakpoint(large)
         --ll-indent: 40px
